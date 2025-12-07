@@ -1,9 +1,40 @@
+include:
+  - template: Jobs/SAST.gitlab-ci.yml
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
+
 stages:
   - build
   - test
   - deploy
-  - manifest
 
-include:
-  - template: Jobs/Secret-Detection.gitlab-ci.yml
-  - template: Jobs/SAST.gitlab-ci.yml
+build:
+  stage: build
+  image: yobasystems/alpine-nodejs:min
+  before_script:
+    - npm install --global corepack@latest
+    - corepack enable
+    - corepack prepare pnpm@latest-10 --activate
+    - pnpm config set store-dir .pnpm-store
+  script:
+    - pnpm install
+    - pnpm run build
+  cache:
+    key:
+      files:
+        - pnpm-lock.yaml
+    paths:
+      - .pnpm-store
+  artifacts:
+    paths:
+      - dist/
+
+
+test:
+  stage: test
+  image: yobasystems/alpine-nodejs:min
+  script:
+    - 'if [ ! -d "dist" ]; then echo "Build failed: dist directory not found" && exit 1; fi'
+    - 'if [ -z "$(ls -A dist)" ]; then echo "Build failed: dist directory is empty" && exit 1; fi'
+    - echo "Build completed successfully"
+  dependencies:
+    - build
