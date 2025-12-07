@@ -1,0 +1,9 @@
+stages:
+  - build
+  - test
+  - deploy
+  - manifest
+
+include:
+  - template: Jobs/Secret-Detection.gitlab-ci.yml
+  - template: Jobs/SAST.gitlab-ci.yml
