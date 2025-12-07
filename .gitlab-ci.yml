@@ -28,7 +28,6 @@ build:
     paths:
       - dist/
 
-
 test:
   stage: test
   image: yobasystems/alpine-nodejs:min
