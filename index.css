@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --font-sans: 'Inter', 'sans-serif';
-  --font-mono: 'JetBrains Mono', 'monospace';
+  --font-sans: "Inter", "sans-serif";
+  --font-mono: "JetBrains Mono", "monospace";
 
   --color-tech-black: #050505;
   --color-tech-dark: #0a0a0a;
