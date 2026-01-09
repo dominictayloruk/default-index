@@ -1,6 +1,6 @@
-import React from 'react';
-import { SERVICE_STATS, SERVICES_STATUS } from '../constants';
-import { CheckCircle, AlertTriangle, XCircle } from 'lucide-react';
+import { AlertTriangle, CheckCircle, XCircle } from "lucide-react";
+import type React from "react";
+import { SERVICE_STATS, SERVICES_STATUS } from "../constants";
 
 const StatusDashboard: React.FC = () => {
   return (
@@ -66,9 +66,9 @@ const StatusDashboard: React.FC = () => {
                   className="bg-tech-card border-tech-border flex items-center justify-between rounded border p-4 transition-colors hover:border-gray-600"
                 >
                   <div className="flex items-center gap-4">
-                    {service.status === 'operational' ? (
+                    {service.status === "operational" ? (
                       <CheckCircle className="text-tech-green h-5 w-5" />
-                    ) : service.status === 'degraded' ? (
+                    ) : service.status === "degraded" ? (
                       <AlertTriangle className="h-5 w-5 text-yellow-500" />
                     ) : (
                       <XCircle className="h-5 w-5 text-red-500" />
@@ -83,11 +83,11 @@ const StatusDashboard: React.FC = () => {
                     </span>
                     <div
                       className={`rounded px-2 py-1 text-xs font-bold uppercase ${
-                        service.status === 'operational'
-                          ? 'bg-tech-green/10 text-tech-green'
-                          : service.status === 'degraded'
-                            ? 'bg-yellow-500/10 text-yellow-500'
-                            : 'bg-red-500/10 text-red-500'
+                        service.status === "operational"
+                          ? "bg-tech-green/10 text-tech-green"
+                          : service.status === "degraded"
+                            ? "bg-yellow-500/10 text-yellow-500"
+                            : "bg-red-500/10 text-red-500"
                       }`}
                     >
                       {service.status}

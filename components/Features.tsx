@@ -1,5 +1,5 @@
-import React from 'react';
-import { FEATURES } from '../constants';
+import type React from "react";
+import { FEATURES } from "../constants";
 
 const Features: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Features: React.FC = () => {
         <div className="mb-16 flex flex-col items-end justify-between gap-6 md:flex-row">
           <div className="max-w-2xl">
             <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl">
-              Engineered for{' '}
+              Engineered for{" "}
               <span className="text-tech-green">Performance</span>
             </h2>
             <p className="text-gray-400">

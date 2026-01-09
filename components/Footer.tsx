@@ -1,6 +1,6 @@
-import React from 'react';
-import { Github, Twitter, Terminal, Linkedin } from 'lucide-react';
-import { APP_NAME } from '../constants';
+import { Github, Linkedin, Terminal, Twitter } from "lucide-react";
+import type React from "react";
+import { APP_NAME } from "../constants";
 
 const Footer: React.FC = () => {
   return (

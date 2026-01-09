@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, Command } from 'lucide-react';
+import { ArrowRight, Command } from "lucide-react";
+import type React from "react";
 
 const Hero: React.FC = () => {
   return (
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div className="text-xs text-gray-300">
                   8f3a2b1c4d5e yobasystems/alpine-nginx:latest "nginx" Up 2
-                  minutes 0.0.0.0:80-{'>'}80/tcp
+                  minutes 0.0.0.0:80-{">"}80/tcp
                 </div>
 
                 <div className="mt-4 flex gap-2">
@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
                   <br />
                   [INFO] CPU Load: <span className="text-tech-green">12%</span>
                   <br />
-                  [INFO] Memory Usage:{' '}
+                  [INFO] Memory Usage:{" "}
                   <span className="text-tech-green">1.2GB / 8GB</span>
                   <br />
                   [OK] Database Connection

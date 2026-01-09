@@ -1,9 +1,9 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import StatusDashboard from './components/StatusDashboard';
-import Footer from './components/Footer';
+import React from "react";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import StatusDashboard from "./components/StatusDashboard";
 
 function App() {
   return (

@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Terminal } from 'lucide-react';
-import { NAV_ITEMS, APP_NAME } from '../constants';
+import { Menu, Terminal, X } from "lucide-react";
+import type React from "react";
+import { useEffect, useState } from "react";
+import { APP_NAME, NAV_ITEMS } from "../constants";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,16 +11,16 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
       className={`fixed top-0 right-0 left-0 z-50 border-b transition-all duration-300 ${
         scrolled
-          ? 'bg-tech-black/80 border-tech-border py-4 backdrop-blur-md'
-          : 'border-transparent bg-transparent py-6'
+          ? "bg-tech-black/80 border-tech-border py-4 backdrop-blur-md"
+          : "border-transparent bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto max-w-7xl px-6">
@@ -30,7 +31,7 @@ const Navbar: React.FC = () => {
               <Terminal className="text-tech-green h-5 w-5" />
             </div>
             <span className="font-mono text-lg font-bold tracking-wider text-white">
-              {APP_NAME}{' '}
+              {APP_NAME}{" "}
               <span className="text-tech-green animate-pulse">_</span>
             </span>
           </a>

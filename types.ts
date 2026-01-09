@@ -1,4 +1,4 @@
-import { LucideIcon } from 'lucide-react';
+import type { LucideIcon } from "lucide-react";
 
 export interface NavItem {
   label: string;
@@ -20,6 +20,6 @@ export interface Stat {
 
 export interface ServiceStatus {
   name: string;
-  status: 'operational' | 'degraded' | 'down';
+  status: "operational" | "degraded" | "down";
   uptime: string;
 }
