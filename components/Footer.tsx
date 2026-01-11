@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="col-span-1 md:col-span-1">
-            <a href="#" className="mb-6 flex items-center gap-2">
+            <a href="#top" className="mb-6 flex items-center gap-2">
               <div className="bg-tech-green/10 border-tech-green/20 group-hover:border-tech-green rounded border p-2 transition-colors">
                 <Terminal className="text-tech-green h-5 w-5" />
               </div>
@@ -26,22 +26,34 @@ const Footer: React.FC = () => {
             <h4 className="mb-6 font-bold text-white">Platform</h4>
             <ul className="space-y-4 text-sm text-gray-500">
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#documentation"
+                  className="hover:text-tech-green transition-colors"
+                >
                   Documentation
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#api"
+                  className="hover:text-tech-green transition-colors"
+                >
                   API Reference
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#status"
+                  className="hover:text-tech-green transition-colors"
+                >
                   Status
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#cli"
+                  className="hover:text-tech-green transition-colors"
+                >
                   CLI Tools
                 </a>
               </li>
@@ -52,22 +64,34 @@ const Footer: React.FC = () => {
             <h4 className="mb-6 font-bold text-white">Resources</h4>
             <ul className="space-y-4 text-sm text-gray-500">
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#github"
+                  className="hover:text-tech-green transition-colors"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#gitlab"
+                  className="hover:text-tech-green transition-colors"
+                >
                   Gitlab
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#docker"
+                  className="hover:text-tech-green transition-colors"
+                >
                   Docker Hub
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-tech-green transition-colors">
+                <a
+                  href="#quay"
+                  className="hover:text-tech-green transition-colors"
+                >
                   Quay.io
                 </a>
               </li>
@@ -108,10 +132,10 @@ const Footer: React.FC = () => {
             © {new Date().getFullYear()} {APP_NAME}. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-600">
-            <a href="#" className="hover:text-gray-400">
+            <a href="#privacy" className="hover:text-gray-400">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-gray-400">
+            <a href="#terms" className="hover:text-gray-400">
               Terms of Service
             </a>
           </div>

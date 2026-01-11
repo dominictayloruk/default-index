@@ -20,7 +20,7 @@ const Features: React.FC = () => {
             </p>
           </div>
           <a
-            href="#"
+            href="#modules"
             className="border-tech-green hover:text-tech-green border-b pb-1 font-mono text-sm text-white transition-colors"
           >
             VIEW ALL MODULES &rarr;

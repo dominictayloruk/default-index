@@ -16,9 +16,9 @@ const StatusDashboard: React.FC = () => {
           {/* Stats Grid */}
           <div className="order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-6">
-              {SERVICE_STATS.map((stat, idx) => (
+              {SERVICE_STATS.map((stat) => (
                 <div
-                  key={idx}
+                  key={stat.label}
                   className="border-tech-border bg-tech-black/50 rounded-lg border p-6 backdrop-blur"
                 >
                   <div className="mb-1 font-mono text-4xl font-bold text-white">
@@ -60,9 +60,9 @@ const StatusDashboard: React.FC = () => {
             </p>
 
             <div className="space-y-4">
-              {SERVICES_STATUS.map((service, idx) => (
+              {SERVICES_STATUS.map((service) => (
                 <div
-                  key={idx}
+                  key={service.name}
                   className="bg-tech-card border-tech-border flex items-center justify-between rounded border p-4 transition-colors hover:border-gray-600"
                 >
                   <div className="flex items-center gap-4">

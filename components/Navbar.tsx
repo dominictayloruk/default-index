@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto max-w-7xl px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="group flex items-center gap-2">
+          <a href="#top" className="group flex items-center gap-2">
             <div className="bg-tech-green/10 border-tech-green/20 group-hover:border-tech-green rounded border p-2 transition-colors">
               <Terminal className="text-tech-green h-5 w-5" />
             </div>
@@ -47,13 +47,14 @@ const Navbar: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button className="bg-tech-green text-tech-black hover:bg-tech-greenDim rounded px-5 py-2 text-sm font-bold transition-colors">
+            <button type="button" className="bg-tech-green text-tech-black hover:bg-tech-greenDim rounded px-5 py-2 text-sm font-bold transition-colors">
               DASHBOARD
             </button>
           </div>
 
           {/* Mobile Toggle */}
           <button
+            type="button"
             className="text-gray-300 hover:text-white md:hidden"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -74,7 +75,7 @@ const Navbar: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button className="bg-tech-green text-tech-black mt-2 w-full rounded py-3 font-bold">
+            <button type="button" className="bg-tech-green text-tech-black mt-2 w-full rounded py-3 font-bold">
               ACCESS CONSOLE
             </button>
           </div>
