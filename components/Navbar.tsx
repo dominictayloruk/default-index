@@ -47,7 +47,10 @@ const Navbar: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button type="button" className="bg-tech-green text-tech-black hover:bg-tech-greenDim rounded px-5 py-2 text-sm font-bold transition-colors">
+            <button
+              type="button"
+              className="bg-tech-green text-tech-black hover:bg-tech-greenDim rounded px-5 py-2 text-sm font-bold transition-colors"
+            >
               DASHBOARD
             </button>
           </div>
@@ -75,7 +78,10 @@ const Navbar: React.FC = () => {
                 {item.label}
               </a>
             ))}
-            <button type="button" className="bg-tech-green text-tech-black mt-2 w-full rounded py-3 font-bold">
+            <button
+              type="button"
+              className="bg-tech-green text-tech-black mt-2 w-full rounded py-3 font-bold"
+            >
               ACCESS CONSOLE
             </button>
           </div>
