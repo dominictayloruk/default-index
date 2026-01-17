@@ -15,4 +15,4 @@ A default index page fresh for your container.
    `pnpm install`
 
 2. Run the app:
-   `npm run dev`
+   `pnpm run dev`
