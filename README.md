@@ -2,6 +2,8 @@
 
 A default index page fresh for your container.
 
+![Default Index Screenshot](./default_index_screenshot.png)
+
 ## Run Locally
 
 **Prerequisites:**
