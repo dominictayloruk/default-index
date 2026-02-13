@@ -2,7 +2,7 @@
   "name": "default-index",
   "private": true,
   "version": "0.0.1",
-  "packageManager": "pnpm@10.28.2",
+  "packageManager": "pnpm@10.29.3",
   "type": "module",
   "engines": {
     "node": ">=22"
