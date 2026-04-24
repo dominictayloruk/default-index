@@ -2,7 +2,7 @@
   "name": "default-index",
   "private": true,
   "version": "0.0.1",
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "type": "module",
   "engines": {
     "node": ">=22"
@@ -15,22 +15,22 @@
     "format": "biome format --write ."
   },
   "dependencies": {
-    "lucide-react": "^1.8.0",
+    "lucide-react": "^1.9.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.12",
-    "@tailwindcss/postcss": "^4.2.2",
+    "@biomejs/biome": "^2.4.13",
+    "@tailwindcss/postcss": "^4.2.4",
     "@types/node": "^25.6.0",
     "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
     "postcss": "^8.5.10",
     "prettier": "^3.8.3",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.2.2",
-    "typescript": "~6.0.2",
-    "vite": "^8.0.8",
+    "prettier-plugin-tailwindcss": "^0.7.3",
+    "tailwindcss": "^4.2.4",
+    "typescript": "~6.0.3",
+    "vite": "^8.0.10",
     "vite-plugin-webfont-dl": "^3.12.0"
   }
 }
