@@ -24,7 +24,7 @@
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^26.2.0",
     "@vitejs/plugin-react": "^6.0.5",
-    "autoprefixer": "^10.5.4",
+    "autoprefixer": "^10.5.5",
     "postcss": "^8.5.26",
     "prettier": "^3.9.6",
     "prettier-plugin-tailwindcss": "^0.8.1",
