@@ -19,7 +19,7 @@
       "react": "recommended"
     },
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "style": {
         "useComponentExportOnlyModules": {
           "level": "warn",

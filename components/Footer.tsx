@@ -1,4 +1,6 @@
 import { Terminal } from "lucide-react";
+import type React from "react";
+import { APP_NAME } from "../constants";
 
 const GithubIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -58,8 +60,6 @@ const LinkedinIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <circle cx="4" cy="4" r="2"></circle>
   </svg>
 );
-import type React from "react";
-import { APP_NAME } from "../constants";
 
 const Footer: React.FC = () => {
   return (

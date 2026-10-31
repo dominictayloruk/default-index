@@ -16,3 +16,8 @@ A default index page fresh for your container.
 
 2. Run the app:
    `pnpm run dev`
+
+3. Quality checks and build:
+   `pnpm run check:ci`
+   `pnpm run typecheck`
+   `pnpm run build`
