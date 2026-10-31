@@ -22,7 +22,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.6.3",
     "@tailwindcss/postcss": "^4.3.3",
-    "@types/node": "^26.2.0",
+    "@types/node": "^26.6.5",
     "@vitejs/plugin-react": "^6.1.2",
     "autoprefixer": "^10.6.2",
     "postcss": "^8.5.32",
