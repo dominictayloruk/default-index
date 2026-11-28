@@ -192,8 +192,8 @@ importers:
         specifier: ^4.3.5
         version: 4.3.5
       '@types/node':
-        specifier: ^26.6.6
-        version: 26.6.6
+        specifier: ^26.6.9
+        version: 26.6.9
       '@types/react':
         specifier: ^19.3.0
         version: 19.3.0
@@ -202,7 +202,7 @@ importers:
         version: 19.3.0(@types/react@19.3.0)
       '@vitejs/plugin-react':
         specifier: ^6.3.0
-        version: 6.3.0(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0))
+        version: 6.3.0(vite@8.3.8(@types/node@26.6.9)(jiti@2.7.0))
       autoprefixer:
         specifier: ^10.7.0
         version: 10.7.0(postcss@8.5.33)
@@ -217,10 +217,10 @@ importers:
         version: 7.0.2
       vite:
         specifier: ^8.3.8
-        version: 8.3.8(@types/node@26.6.6)(jiti@2.7.0)
+        version: 8.3.8(@types/node@26.6.9)(jiti@2.7.0)
       vite-plugin-webfont-dl:
         specifier: ^3.14.1
-        version: 3.14.1(debug@4.4.3)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0))
+        version: 3.14.1(debug@4.4.3)(vite@8.3.8(@types/node@26.6.9)(jiti@2.7.0))
 
 packages:
 
@@ -509,8 +509,8 @@ packages:
   '@tailwindcss/postcss@4.3.5':
     resolution: {integrity: sha512-FAV37Tlx9wBiT/hkfgVD0Q6CWsP2oUX3lf28nrfjW8+ksILjnpuFulUqWDfNR4/ZiEHHDRBX8DUTzD1Rys687A==}
 
-  '@types/node@26.6.6':
-    resolution: {integrity: sha512-MzQj+8Kx3XI40OmUAE6Qoh58ZMNstNNMwn2nfd3qWsfe7nDNSqJNzes4njhz6AHwrSHOffSLwXU6yb474Q4aog==}
+  '@types/node@26.6.9':
+    resolution: {integrity: sha512-MkLVXFazHKL5/3lkiYqaSti6Ohv0Vi6z2bPwUQAs/aXUuuY8go4hR3mz8Kvu0lBC2HH0Zn+ON2G9hTglqDD48A==}
 
   '@types/react-dom@19.3.0':
     resolution: {integrity: sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==}
@@ -1229,7 +1229,7 @@ snapshots:
       postcss: 8.5.33
       tailwindcss: 4.3.5
 
-  '@types/node@26.6.6':
+  '@types/node@26.6.9':
     dependencies:
       undici-types: 8.9.0
 
@@ -1301,10 +1301,10 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0))':
+  '@vitejs/plugin-react@6.3.0(vite@8.3.8(@types/node@26.6.9)(jiti@2.7.0))':
     dependencies:
       '@rolldown/pluginutils': 1.0.1
-      vite: 8.3.8(@types/node@26.6.6)(jiti@2.7.0)
+      vite: 8.3.8(@types/node@26.6.9)(jiti@2.7.0)
 
   agent-base@6.0.2:
     dependencies:
@@ -1623,17 +1623,17 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  vite-plugin-webfont-dl@3.14.1(debug@4.4.3)(vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0)):
+  vite-plugin-webfont-dl@3.14.1(debug@4.4.3)(vite@8.3.8(@types/node@26.6.9)(jiti@2.7.0)):
     dependencies:
       axios: 1.21.0(debug@4.4.3)
       clean-css: 5.3.3
       picocolors: 1.1.1
-      vite: 8.3.8(@types/node@26.6.6)(jiti@2.7.0)
+      vite: 8.3.8(@types/node@26.6.9)(jiti@2.7.0)
     transitivePeerDependencies:
       - debug
       - supports-color
 
-  vite@8.3.8(@types/node@26.6.6)(jiti@2.7.0):
+  vite@8.3.8(@types/node@26.6.9)(jiti@2.7.0):
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
@@ -1641,6 +1641,6 @@ snapshots:
       rolldown: 1.2.18
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 26.6.6
+      '@types/node': 26.6.9
       fsevents: 2.3.3
       jiti: 2.7.0
